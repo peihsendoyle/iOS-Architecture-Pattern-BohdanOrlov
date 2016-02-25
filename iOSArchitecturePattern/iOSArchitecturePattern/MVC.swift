@@ -24,31 +24,42 @@ struct Person { // MODEL
     }
 }
 
-class GreetingView { // VIEW
+class GreetingView : UIView { // VIEW
     
-    let showGreetingButton = UIButton()
+    override init(frame: CGRect) {
+        
+        super.init(frame: frame)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        
+        fatalError("init(coder:) has not been implemented")
+    }
     
     let greetingLabel = UILabel()
     
-    func greetingSomeone(firstName: String, lastName: String) -> String {
-        
-        let greeting = "Hello" + " " + firstName + " " + lastName
-        
-        return greeting
-    }
 }
+
 
 class GreetingController {
     
-    private let model : Person!
+    private let model : Person
     
-    private let greetingView: GreetingView!
+    private let greetingView: GreetingView
     
     init(model: Person, greetingView: GreetingView) {
         
         self.model = model
         
         self.greetingView = greetingView
+    }
+    
+    
+    func greetingSomeone() -> String {
+        
+        let greeting = "Hello" + " " + model.firstName + " " + model.lastName
+        
+        return greeting
     }
 }
 
@@ -64,9 +75,10 @@ class MainViewController : UIViewController {
         
         let greetingController = GreetingController(model: model, greetingView: greetingView)
         
-        let greetingString = greetingController.greetingView.greetingSomeone(model.firstName, lastName: model.lastName)
+        let greetingString = greetingController.greetingSomeone()
         
-        print(greetingString)
+        greetingController.greetingView.greetingLabel.text = greetingString
+    
     }
 }
 
