@@ -12,6 +12,8 @@
 		4C06EB4C1C7F664100BBC576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C06EB4B1C7F664100BBC576 /* Assets.xcassets */; };
 		4C06EB4F1C7F664100BBC576 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C06EB4D1C7F664100BBC576 /* LaunchScreen.storyboard */; };
 		4C06EB581C7F666E00BBC576 /* MVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06EB571C7F666E00BBC576 /* MVC.swift */; };
+		4C16A3AB1C80477600513261 /* MVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C16A3AA1C80477600513261 /* MVP.swift */; };
+		4C16A3AD1C80575700513261 /* MVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C16A3AC1C80575700513261 /* MVVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		4C06EB4E1C7F664100BBC576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C06EB501C7F664100BBC576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C06EB571C7F666E00BBC576 /* MVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVC.swift; sourceTree = "<group>"; };
+		4C16A3AA1C80477600513261 /* MVP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVP.swift; sourceTree = "<group>"; };
+		4C16A3AC1C80575700513261 /* MVVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				4C06EB441C7F664100BBC576 /* AppDelegate.swift */,
 				4C06EB571C7F666E00BBC576 /* MVC.swift */,
+				4C16A3AA1C80477600513261 /* MVP.swift */,
+				4C16A3AC1C80575700513261 /* MVVM.swift */,
 				4C06EB561C7F664F00BBC576 /* Resources */,
 				4C06EB4B1C7F664100BBC576 /* Assets.xcassets */,
 			);
@@ -145,7 +151,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C06EB581C7F666E00BBC576 /* MVC.swift in Sources */,
+				4C16A3AB1C80477600513261 /* MVP.swift in Sources */,
 				4C06EB451C7F664100BBC576 /* AppDelegate.swift in Sources */,
+				4C16A3AD1C80575700513261 /* MVVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +301,7 @@
 				4C06EB551C7F664100BBC576 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

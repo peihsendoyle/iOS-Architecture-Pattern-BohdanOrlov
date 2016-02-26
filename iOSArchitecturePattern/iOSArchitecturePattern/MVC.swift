@@ -82,7 +82,14 @@ class MainViewController : UIViewController {
     }
 }
 
-
-
 // Assembling of MVC
+
+let modelOfMVC = Person(firstName: "Nguyen", lastName: "Hieu Hiep")
+
+let viewOfMVC = GreetingView()
+
+let controllerOfMVC = GreetingController(model: modelOfMVC, greetingView: viewOfMVC)
+
+
+
 
